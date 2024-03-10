@@ -2,14 +2,12 @@
 import pytest
 
 # Importar archivo de ejercicio
-from ejercicios.operaciones import suma
+from ejercicios.operaciones import par
 
 # Clase para crear tests. Las funciones de testeo deberán crearse en esta clase
 class TestClass:
 
     # Test para la operación suma
-    def test_suma(self):
-        assert suma(4,5) == 9
-        assert suma(-1,-2) == -3
-        assert suma(-7,5) == -2
-        assert suma(-7,9) == 2
+    def test_par(self):
+        assert par(1) == 0
+        assert par(2) == 1
